@@ -11,7 +11,3 @@ A disciplined, curious, and innovative Computer Engineering graduate from **Poli
 ## 🚀 Live Demo
 
 🔗 [View Live Website](https://your-vercel-url.vercel.app)
-
-> Replace the link above after deploying to Vercel.
-
-## 📁 Project Structure
