@@ -1,44 +1,17 @@
-# vCard - Personal portfolio
+# 🌐 Personal Portfolio — Rafly Akbar Prastyo
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+Welcome to my personal portfolio website! This site showcases a collection of projects that I’ve built during my academic journey and internships, focusing on Web & Mobile Development, Internet of Things (IoT), and Artificial Intelligence.
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+## 📄 About Me
 
-## Demo
+A disciplined, curious, and innovative Computer Engineering graduate from **Politeknik Elektronika Negeri Surabaya (PENS)**, with solid experience managing and contributing to various technology-based projects and competitions during university.
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+> Passionate about building efficient, scalable, and user-friendly systems — especially in the fields of web development, IoT, and AI.
 
-## Prerequisites
+## 🚀 Live Demo
 
-Before you begin, ensure you have met the following requirements:
+🔗 [View Live Website](https://your-vercel-url.vercel.app)
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+> Replace the link above after deploying to Vercel.
 
-## Installing vCard
-
-To install **vCard**, follow these steps:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-Windows:
-
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
-
-## Contact
-
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
-
-## License
-
-MIT
+## 📁 Project Structure
