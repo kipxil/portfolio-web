@@ -1,715 +1,798 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rafly Akbar Portfolio</title>
-
-    <!--
-    - favicon
-  -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.ico"
-      type="image/x-icon"
+    <meta name="theme-color" content="#08111f" />
+    <meta
+      name="description"
+      content="Rafly Akbar Prastyo — IT Infrastructure Engineer & Full-Stack Developer portfolio."
     />
+    <title>
+      Rafly Akbar Prastyo — IT Infrastructure Engineer & Full-Stack Developer
+    </title>
 
-    <!--
-    - custom css link
-  -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!--
-    - google font link
-  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-
   <body>
-    <!--
-    - #MAIN
-  -->
+    <div class="noise"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="Rafly Akbar Prastyo home">
+        <span class="brand-mark">RA</span>
+        <span class="brand-copy">Rafly<span>.dev</span></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#stack">Stack</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-tools">
+        <span class="availability"><i></i> Open to opportunities</span>
+        <a class="header-cta" href="#contact">Let's connect <span>↗</span></a>
+        <button
+          class="mobile-menu-btn"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-nav" aria-hidden="true">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </div>
 
     <main>
-      <!--
-      - #SIDEBAR
-    -->
+      <section class="hero section" id="home">
+        <div class="hero-copy reveal">
+          <p class="hero-index mono">01 / PROFILE</p>
+          <div class="role-line">
+            <span class="role-dot"></span>
+            <span>IT INFRASTRUCTURE ENGINEER</span>
+            <b>×</b>
+            <span>FULL-STACK DEVELOPER</span>
+          </div>
+          <h1>Infrastructure first.<br /><span>Software that fits.</span></h1>
+          <p class="hero-description">
+            I work across servers, deployments, authentication, internal
+            applications, and business-facing software — connecting reliable IT
+            operations with practical products.
+          </p>
 
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/my-avatar.png"
-              alt="Rafly Akbar Prastyo"
-              width="80"
-            />
-          </figure>
-
-          <div class="info-content">
-            <h1 class="name" title="Rafly Akbar Prastyo">
-              Rafly Akbar Prastyo
-            </h1>
-
-            <!-- <p class="title">Web developer</p> -->
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects"
+              >View selected work <span>↗</span></a
+            >
+            <a class="btn btn-ghost" href="#experience"
+              >My experience <span>↓</span></a
+            >
           </div>
 
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-        </div>
-
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:raflyakbar606@gmail.com" class="contact-link"
-                  >raflyakbar606@gmail.com</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a href="tel:+6289677020854" class="contact-link"
-                  >+62 89677020854</a
-                >
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">January 24, 2003</time>
-              </div>
-            </li>
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Surabaya, Indonesia</address>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a
-                href="https://www.linkedin.com/in/raflyap/"
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a
-                href="http://instagram.com/rafly_akbrr"
-                class="social-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!--
-      - #main-content
-    -->
-
-      <div class="main-content">
-        <!--
-        - #NAVBAR
-      -->
-
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
-          </ul>
-        </nav>
-
-        <!--
-        - #ABOUT
-      -->
-
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
-
-          <section class="about-text">
-            <p>
-              A disciplined, curious, and innovative Computer Engineering
-              graduate from Politeknik Elektronika Negeri Surabaya (PENS), with
-              solid experience managing and contributing to various
-              technology-based projects and competitions during university.
-              Highly passionate in the fields of Web & Mobile Development,
-              Internet of Things (IoT), and Artificial Intelligence, with strong
-              attention to detail in building efficient, scalable, and
-              user-friendly systems.
-            </p>
-
-            <p>
-              Rafly has hands-on experience through internships in IT
-              infrastructure and IoT-based modern agriculture, taking active
-              roles in system design, application development, and real-time
-              data integration. He is known for his adaptability, integrity, and
-              eagerness to continually grow while delivering impactful
-              technology solutions.
-            </p>
-          </section>
-
-          <!--
-          - service
-        -->
-
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
-
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-app.svg"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Mobile Apps Development</h4>
-
-                  <p class="service-item-text">
-                    Professional development of applications for Android and
-                    iOS.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-dev.svg"
-                    alt="Web development icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web development</h4>
-
-                  <p class="service-item-text">
-                    High-quality development of sites at the professional level.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/icon-design.svg
-                "
-                    alt="design icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">IT Support</h4>
-
-                  <p class="service-item-text">
-                    The most modern and high-quality design made at a
-                    professional level.
-                  </p>
-                </div>
-              </li>
-
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/iot.png"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Internet of Things</h4>
-
-                  <p class="service-item-text">
-                    I make high-quality photos of any category at a professional
-                    level.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!--
-          - testimonials
-        -->
-
-          <!--
-          - testimonials modal
-        -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-            </section>
+          <div class="hero-facts">
+            <div><strong>2–3</strong><span>hotel / site support</span></div>
+            <div>
+              <strong>3.71</strong><span>GPA · Computer Engineering</span>
+            </div>
+            <div>
+              <strong>60→45s</strong><span>monitoring prototype latency</span>
+            </div>
           </div>
+        </div>
 
-          <!--
-          - clients
-        --></article>
-
-        <!--
-        - #RESUME
-      -->
-
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
+        <div
+          class="hero-visual reveal delay-1"
+          aria-label="System architecture overview"
+        >
+          <div class="architecture-card">
+            <div class="architecture-head">
+              <div>
+                <span class="mono muted-label">SYSTEM MAP</span>
+                <h2>One workflow.<br /><span>Several layers.</span></h2>
               </div>
-
-              <h3 class="h3">Education</h3>
+              <span class="live-pill"><i></i> online</span>
             </div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Politeknik Elektronika Negeri Surabaya
-                </h4>
-
-                <span>2021 — 2025</span>
-
-                <p class="timeline-text">Already taking 144/144 course</p>
-                <p class="timeline-text">
-                  Fully funded by the Pemuda Tangguh Scholarship from Surabaya
-                  City Government
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
+            <div class="architecture-body">
+              <div class="arch-row">
+                <div class="arch-node node-user">
+                  <span class="node-icon">UI</span>
+                  <div><strong>Users</strong><small>Hotel teams</small></div>
+                </div>
+                <span class="connector"></span>
+                <div class="arch-node">
+                  <span class="node-icon">APP</span>
+                  <div>
+                    <strong>Applications</strong
+                    ><small>Operational workflows</small>
+                  </div>
+                </div>
               </div>
-
-              <h3 class="h3">Experience</h3>
+              <div class="arch-branch"><span></span><span></span></div>
+              <div class="arch-row split">
+                <div class="arch-node node-accent">
+                  <span class="node-icon">SSO</span>
+                  <div>
+                    <strong>Identity</strong><small>Auth & permissions</small>
+                  </div>
+                </div>
+                <div class="arch-node">
+                  <span class="node-icon">API</span>
+                  <div>
+                    <strong>Services</strong><small>Laravel / REST</small>
+                  </div>
+                </div>
+                <div class="arch-node">
+                  <span class="node-icon">DB</span>
+                  <div><strong>Data</strong><small>MySQL / MariaDB</small></div>
+                </div>
+              </div>
+              <div class="arch-branch reverse">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="arch-row base-row">
+                <div class="arch-node node-wide">
+                  <span class="node-icon">OPS</span>
+                  <div>
+                    <strong>Infrastructure & Delivery</strong
+                    ><small
+                      >Linux · Windows · Docker · Monitoring · Deployment</small
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  IoT Developer - Internship
-                </h4>
-                <h3 class="h4 timeline-item-title">
-                  Yayasan Lingkaran Energi Bumi Indonesia Hijau (LEBIH)
-                </h3>
-
-                <span>July 2024 — December 2024</span>
-
-                <p class="timeline-text">
-                  Engineered a solar-powered energy system to support autonomous
-                  hydroponic operations in off-grid environments. Developed an
-                  IoT-based automated nutrient distribution system, optimizing
-                  water and nutrient efficiency for hydroponic melon farms.
-                  Created responsive web and mobile applications using React and
-                  Flutter for real-time monitoring and control of hydroponic
-                  systems, enhancing remote farm management.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  IT Infrastructur - Internship
-                </h4>
-                <h4 class="h4 timeline-item-title">
-                  PT. Terminal Petikemas Surabaya
-                </h4>
-
-                <span>January 2024 — Juny 2024</span>
-
-                <p class="timeline-text">
-                  Designed and implemented a centralized monitoring dashboard
-                  for servers and network switches using Zabbix and Prometheus,
-                  significantly improving system visibility and uptime
-                  monitoring. Integrated Datadog to analyze system bottlenecks
-                  and performance anomalies, enabling faster troubleshooting and
-                  incident response. Implemented automated alert and reporting
-                  system for IT infrastructure issues, reducing downtime and
-                  improving response efficiency.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Vice Leader and Electrical
-                </h4>
-                <h4 class="h4 timeline-item-title">
-                  Cakrawala Skala UAV Research Team
-                </h4>
-
-                <span>November 2022 — May 2024</span>
-
-                <p class="timeline-text">
-                  Led the electrical design and integration of long-range UAV
-                  systems, optimizing power efficiency and signal stability for
-                  autonomous flight. Developed and configured Ground Control
-                  Station (GCS) software and hardware to support remote flight
-                  command, telemetry, and safety protocols. Represented PENS at
-                  international competitions including Teknofest Turkey and
-                  SAMFC Singapore, contributing to both technical readiness and
-                  flight operations.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Field Coordinator and Administrative Staff
-                </h4>
-                <h4 class="h4 timeline-item-title">
-                  HMCE (Computer Engineering Student Association)
-                </h4>
-
-                <span>November 2021 — November 2022</span>
-
-                <p class="timeline-text">
-                  Coordinated logistics for the graduation event, including tent
-                  setup, stage layout, batch costume preparation, and photobooth
-                  decoration. Contributed to the smooth and festive execution of
-                  the event. Managed attendance tracking, took meeting minutes,
-                  and facilitated the online election of the new student
-                  leadership using Zoom.
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
-
-            <ul class="skills-list content-card">
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Mobile Apps</h5>
-                  <data value="75">75%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 75%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Web Development</h5>
-                  <data value="80">80%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Internet of Things</h5>
-                  <data value="90">90%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">IT Support</h5>
-                  <data value="70">70%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%"></div>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #PORTFOLIO
-      -->
-
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-              </ul>
+            <div class="architecture-foot mono">
+              <span>status</span
+              ><strong>stable · observable · maintainable</strong>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
+      <section class="section about-section" id="about">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">Profile</p>
+            <h2>Built between <span>ops & code.</span></h2>
+          </div>
+          <span class="section-number mono">02</span>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-story panel reveal">
+            <span class="about-kicker mono">ABOUT RAFLY</span>
+            <p class="about-lead">
+              An IT professional who likes understanding the whole system — from
+              the user and workflow to the server underneath it.
+            </p>
+            <p>
+              I am currently an
+              <strong>IT Specialist at PT Tanly Wisata Nusantara</strong>,
+              supporting IT operations across 2–3 hotel/sites while also
+              building internal web applications used to improve day-to-day
+              hospitality workflows.
+            </p>
+            <p>
+              My work sits at the intersection of infrastructure and software:
+              server & deployment work, SSO/authentication, operational
+              applications, and IT support. Before that, I worked in
+              infrastructure monitoring and software development internships,
+              which shaped how I approach reliability, troubleshooting, and
+              delivery.
+            </p>
+            <div class="about-note">
+              <span>Focus</span
+              ><strong>Reliable infrastructure + practical software</strong>
+            </div>
+          </article>
+
+          <div class="about-side reveal delay-1">
+            <div class="fact-card accent">
+              <span class="fact-label mono">CURRENT ROLE</span>
+              <strong>IT Specialist</strong>
+              <p>PT Tanly Wisata Nusantara</p>
+              <small>Hospitality IT · infrastructure · internal systems</small>
+            </div>
+            <div class="fact-grid">
+              <div class="fact-card">
+                <span class="fact-label mono">EDUCATION</span
+                ><strong>PENS</strong>
+                <p>Computer Engineering</p>
+                <small>GPA 3.71</small>
+              </div>
+              <div class="fact-card">
+                <span class="fact-label mono">BASED IN</span
+                ><strong>Surabaya</strong>
+                <p>Indonesia</p>
+                <small>Open to IT opportunities</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="capability-block reveal">
+          <div class="subheading">
+            <p class="section-label">What I work on</p>
+            <h3>Capabilities</h3>
+          </div>
+          <div class="capability-grid">
+            <article class="capability-card">
+              <div class="cap-number mono">01</div>
+              <h4>IT Infrastructure</h4>
+              <p>
+                Server, OS, networking fundamentals, monitoring,
+                troubleshooting, maintenance, and production support.
+              </p>
+              <div class="mini-tags">
+                <span>Linux</span><span>Windows</span><span>Networking</span>
+              </div>
+            </article>
+            <article class="capability-card">
+              <div class="cap-number mono">02</div>
+              <h4>Internal Applications</h4>
+              <p>
+                Web-based operational systems for hospitality teams, designed
+                around real business workflows rather than generic CRUD screens.
+              </p>
+              <div class="mini-tags">
+                <span>Laravel</span><span>Vue</span><span>MySQL</span>
+              </div>
+            </article>
+            <article class="capability-card">
+              <div class="cap-number mono">03</div>
+              <h4>Identity & Access</h4>
+              <p>
+                SSO-oriented portals, authentication flows, role-based access,
+                permission management, and application access control.
+              </p>
+              <div class="mini-tags">
+                <span>SSO</span><span>RBAC</span><span>API</span>
+              </div>
+            </article>
+            <article class="capability-card">
+              <div class="cap-number mono">04</div>
+              <h4>Full-Stack Delivery</h4>
+              <p>
+                Backend, frontend, mobile integration, databases, deployment,
+                and the glue between a technical solution and its users.
+              </p>
+              <div class="mini-tags">
+                <span>PHP</span><span>JavaScript</span><span>Flutter</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">Career</p>
+            <h2>Experience <span>in context.</span></h2>
+          </div>
+          <span class="section-number mono">03</span>
+        </div>
+
+        <div class="experience-list">
+          <article class="experience-item current reveal">
+            <div class="experience-side">
+              <span class="exp-index mono">01</span
+              ><span class="exp-period mono">AUG 2025 — PRESENT</span>
+            </div>
+            <div class="experience-main">
+              <div class="experience-title">
+                <div>
+                  <p class="role-label mono">IT SPECIALIST</p>
+                  <h3>PT Tanly Wisata Nusantara</h3>
+                </div>
+                <span class="current-badge"><i></i> Current</span>
+              </div>
+              <p class="experience-summary">
+                Supporting IT operations across 2–3 hotel/sites while developing
+                internal systems that connect hospitality operations with
+                dependable infrastructure.
+              </p>
+              <div class="experience-points">
+                <div>
+                  <span>01</span>
+                  <p>
+                    Build and maintain web-based hotel operational applications,
+                    including membership, equipment maintenance, daily F&amp;B
+                    reporting, and an internal portal.
+                  </p>
+                </div>
+                <div>
+                  <span>02</span>
+                  <p>
+                    Handle server & deployment work, application rollout,
+                    troubleshooting, maintenance, and infrastructure support for
+                    day-to-day operations.
+                  </p>
+                </div>
+                <div>
+                  <span>03</span>
+                  <p>
+                    Work on SSO/authentication and role-based access patterns so
+                    users can reach the right internal tools with the right
+                    permissions.
+                  </p>
+                </div>
+              </div>
+              <div class="tech-line">
+                <span>Infrastructure</span><span>Internal Apps</span
+                ><span>Deployment</span><span>SSO</span><span>IT Support</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-side">
+              <span class="exp-index mono">02</span
+              ><span class="exp-period mono">6-MONTH INTERNSHIP</span>
+            </div>
+            <div class="experience-main">
+              <div class="experience-title">
+                <div>
+                  <p class="role-label mono">IT INFRASTRUCTURE INTERN</p>
+                  <h3>PT Terminal Petikemas Surabaya</h3>
+                </div>
+              </div>
+              <p class="experience-summary">
+                Worked on infrastructure monitoring and prototyped a faster
+                monitoring pipeline for network-device polling and database
+                insertion.
+              </p>
+              <div class="metric-strip">
+                <div><strong>60–120s</strong><span>observed latency</span></div>
+                <div>
+                  <strong>45s</strong><span>prototype target achieved</span>
+                </div>
+                <div>
+                  <strong>Alerting</strong><span>email notification flow</span>
+                </div>
+              </div>
+              <div class="tech-line">
+                <span>Zabbix</span><span>Prometheus</span><span>Node.js</span
+                ><span>net-snmp</span><span>MySQL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="experience-item reveal">
+            <div class="experience-side">
+              <span class="exp-index mono">03</span
+              ><span class="exp-period mono">6-MONTH INTERNSHIP</span>
+            </div>
+            <div class="experience-main">
+              <div class="experience-title">
+                <div>
+                  <p class="role-label mono">SOFTWARE DEVELOPER INTERN</p>
+                  <h3>Yayasan Lingkaran Energi Bumi Indonesia Hijau</h3>
+                </div>
+              </div>
+              <p class="experience-summary">
+                Built software experiences around hydroponic IoT, including web
+                and mobile interfaces for monitoring and controlling
+                agricultural systems.
+              </p>
+              <div class="tech-line">
+                <span>React</span><span>Flutter</span><span>IoT</span
+                ><span>Automation</span><span>Monitoring</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="education-row panel reveal">
+          <div>
+            <p class="section-label">Education</p>
+            <h3>Politeknik Elektronika Negeri Surabaya (PENS)</h3>
+            <p>Computer Engineering · GPA 3.71</p>
+          </div>
+          <span class="education-badge mono">COMPUTER<br />ENGINEERING</span>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">Selected work</p>
+            <h2>Projects with a <span>real use case.</span></h2>
+          </div>
+          <span class="section-number mono">04</span>
+        </div>
+
+        <div class="project-intro reveal">
+          <p>
+            From hotel operations and authentication to monitoring, POS, mobile,
+            and IoT — these projects show the range between the infrastructure
+            layer and the product layer.
+          </p>
+          <span class="mono">08 PROJECTS</span>
+        </div>
+
+        <div
+          class="project-toolbar reveal"
+          role="group"
+          aria-label="Project filters"
+        >
+          <div class="filter-list">
+            <button class="filter-btn active" type="button" data-filter="all">
+              All
+            </button>
+            <button class="filter-btn" type="button" data-filter="infra">
+              Infrastructure
+            </button>
+            <button class="filter-btn" type="button" data-filter="web">
+              Web
+            </button>
+            <button class="filter-btn" type="button" data-filter="mobile">
+              Mobile
+            </button>
+            <button class="filter-btn" type="button" data-filter="iot">
+              IoT
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card featured reveal" data-category="web">
+            <div class="project-cover project-hospitality">
+              <span class="cover-label mono">HOSPITALITY / INTERNAL APPS</span
+              ><span class="cover-code mono">01</span>
+              <div class="cover-diagram"><i></i><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>01 / 08</span><span>Work</span>
+              </div>
+              <h3>Hospitality Internal Applications</h3>
+              <p>
+                A growing set of web-based systems supporting hotel operations,
+                including membership, equipment maintenance, daily F&amp;B
+                reporting, and internal portals.
+              </p>
+              <div class="tech-stack">
+                <span>Laravel</span><span>Vue</span><span>MySQL</span
+                ><span>Deployment</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="infra web">
+            <div class="project-cover project-monitoring">
+              <span class="cover-label mono">MONITORING / INFRA</span
+              ><span class="cover-code mono">02</span>
+              <div class="chart-lines"><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>02 / 08</span><span>Infrastructure</span>
+              </div>
+              <h3>Monitoring &amp; Alerting Pipeline</h3>
+              <p>
+                Prototype that split polling and database insert work to reduce
+                monitoring latency and support alert + email notification flows.
+              </p>
+              <div class="tech-stack">
+                <span>Zabbix</span><span>Prometheus</span><span>Node.js</span
+                ><span>net-snmp</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web">
+            <div class="project-cover project-sso">
+              <span class="cover-label mono">IDENTITY / ACCESS</span
+              ><span class="cover-code mono">03</span>
+              <div class="lock-shape">◎</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>03 / 08</span><span>Work</span>
+              </div>
+              <h3>Portal + SSO / Authentication</h3>
+              <p>
+                Internal access layer connecting users to applications with
+                authentication, role-based access, and permission-aware
+                workflows.
+              </p>
+              <div class="tech-stack">
+                <span>SSO</span><span>RBAC</span><span>Laravel</span
+                ><span>API</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="web mobile">
+            <div class="project-cover project-tire">
+              <span class="cover-label mono">FLEET / WEB APP</span
+              ><span class="cover-code mono">04</span>
+              <div class="ring-shape"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>04 / 08</span><span>Web</span>
+              </div>
+              <h3>Tire Management System</h3>
+              <p>
+                React-based frontend for tracking tire-related operational data
+                and management workflows.
+              </p>
+              <div class="tech-stack">
+                <span>React</span><span>JavaScript</span><span>REST</span>
+              </div>
+              <a
+                class="project-link"
+                href="https://github.com/kipxil/tire-monitoring"
+                target="_blank"
+                rel="noopener"
+                >View repository ↗</a
               >
-                <a
-                  href="https://github.com/kipxil/tire-monitoring.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <figure class="project-img">
-                    <img
-                      src="./assets/images/myproject-1.png"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
+            </div>
+          </article>
 
-                  <h3 class="project-title">Tyre Management</h3>
+          <article class="project-card reveal" data-category="web mobile">
+            <div class="project-cover project-pos">
+              <span class="cover-label mono">POS / TRANSACTIONS</span
+              ><span class="cover-code mono">05</span>
+              <div class="grid-shape"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>05 / 08</span><span>Web + Mobile</span>
+              </div>
+              <h3>POS &amp; Inventory Ecosystem</h3>
+              <p>
+                Laravel backend and Flutter application concept for
+                transactions, recipes/BOM, inventory, suppliers, customers,
+                finance, and owner reporting.
+              </p>
+              <div class="tech-stack">
+                <span>Laravel</span><span>Flutter</span><span>MariaDB</span
+                ><span>REST API</span>
+              </div>
+            </div>
+          </article>
 
-                  <p class="project-category">Web Development</p>
-                </a>
-              </li>
+          <article class="project-card reveal" data-category="web mobile">
+            <div class="project-cover project-voucher">
+              <span class="cover-label mono">VOUCHER / MOBILE</span
+              ><span class="cover-code mono">06</span>
+              <div class="ticket-shape"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>06 / 08</span><span>Web + Mobile</span>
+              </div>
+              <h3>Voucher Management</h3>
+              <p>
+                Laravel backend paired with a Flutter mobile app for
+                voucher-driven workflows and API-based interactions.
+              </p>
+              <div class="tech-stack">
+                <span>Laravel</span><span>Flutter</span><span>Sanctum</span>
+              </div>
+            </div>
+          </article>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a
-                  href="https://github.com/kipxil/hydro-predict.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <figure class="project-img">
-                    <img
-                      src="./assets/images/myproject-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
+          <article class="project-card reveal" data-category="web mobile iot">
+            <div class="project-cover project-hydro">
+              <span class="cover-label mono">AGRI / IOT</span
+              ><span class="cover-code mono">07</span>
+              <div class="pulse-shape"><i></i><i></i><i></i></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>07 / 08</span><span>IoT</span>
+              </div>
+              <h3>Hydroponic Monitoring &amp; Control</h3>
+              <p>
+                React and Flutter applications for monitoring hydroponic
+                conditions with automated and manual nutrient control.
+              </p>
+              <div class="tech-stack">
+                <span>React</span><span>Flutter</span><span>IoT</span
+                ><span>Automation</span>
+              </div>
+            </div>
+          </article>
 
-                  <h3 class="project-title">Hydro Sense App</h3>
+          <article class="project-card reveal" data-category="web">
+            <div class="project-cover project-quality">
+              <span class="cover-label mono">HOSPITALITY / QUALITY</span
+              ><span class="cover-code mono">08</span>
+              <div class="quality-shape">✓</div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">
+                <span>08 / 08</span><span>Web</span>
+              </div>
+              <h3>Hospitality Quality Report</h3>
+              <p>
+                Quality and HACCP-oriented system concept covering inspections,
+                vendor assessments, checklists, chiller QR temperature checks,
+                and multi-hotel access.
+              </p>
+              <div class="tech-stack">
+                <span>Laravel</span><span>RBAC</span><span>QR</span
+                ><span>HACCP</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-                  <p class="project-category">Mobile App Development</p>
-                </a>
-              </li>
+      <section class="section stack-section" id="stack">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-label">Technology</p>
+            <h2>My <span>working stack.</span></h2>
+          </div>
+          <span class="section-number mono">05</span>
+        </div>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a
-                  href="https://github.com/kipxil/flutter-pos-app.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <figure class="project-img">
-                    <img
-                      src="./assets/images/myproject-3.png"
-                      alt="fundo"
-                      loading="lazy"
-                    />
-                  </figure>
+        <div class="stack-layout">
+          <article class="stack-panel panel reveal">
+            <div class="stack-panel-head">
+              <div>
+                <span class="mono muted-label">01 / INFRASTRUCTURE</span>
+                <h3>Operations layer</h3>
+              </div>
+              <span class="stack-index mono">OPS</span>
+            </div>
+            <div class="stack-items">
+              <span>Linux</span><span>Windows</span><span>Networking</span
+              ><span>Zabbix</span><span>Prometheus</span><span>Docker</span
+              ><span>Nginx</span><span>Cloudflare</span><span>Deployment</span
+              ><span>IT Support</span>
+            </div>
+          </article>
+          <article class="stack-panel panel reveal delay-1">
+            <div class="stack-panel-head">
+              <div>
+                <span class="mono muted-label">02 / DEVELOPMENT</span>
+                <h3>Application layer</h3>
+              </div>
+              <span class="stack-index mono">APP</span>
+            </div>
+            <div class="stack-items">
+              <span>PHP</span><span>Laravel</span><span>Vue</span
+              ><span>JavaScript</span><span>React</span><span>Flutter</span
+              ><span>REST API</span><span>Sanctum</span>
+            </div>
+          </article>
+          <article class="stack-panel panel reveal">
+            <div class="stack-panel-head">
+              <div>
+                <span class="mono muted-label">03 / DATA & TOOLING</span>
+                <h3>Delivery layer</h3>
+              </div>
+              <span class="stack-index mono">DATA</span>
+            </div>
+            <div class="stack-items">
+              <span>MySQL</span><span>MariaDB</span><span>Git</span
+              ><span>GitHub</span><span>API integration</span><span>RBAC</span
+              ><span>Monitoring</span><span>Documentation</span>
+            </div>
+          </article>
+        </div>
 
-                  <h3 class="project-title">Point of Sales Apps</h3>
+        <div class="principles-grid reveal">
+          <div>
+            <span class="mono">01</span>
+            <h3>System thinking</h3>
+            <p>
+              Look at the workflow across users, applications, data,
+              infrastructure, and deployment — not just the code.
+            </p>
+          </div>
+          <div>
+            <span class="mono">02</span>
+            <h3>Operational mindset</h3>
+            <p>
+              Prioritize observability, predictable deployment, troubleshooting,
+              documentation, and maintainability.
+            </p>
+          </div>
+          <div>
+            <span class="mono">03</span>
+            <h3>Business context</h3>
+            <p>
+              Translate technical work into tools that help teams perform real
+              operational tasks more clearly and consistently.
+            </p>
+          </div>
+        </div>
+      </section>
 
-                  <p class="project-category">Mobile App Development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a
-                  href="https://github.com/kipxil/tire-monitoring-be.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <figure class="project-img">
-                    <img
-                      src="./assets/images/api.png"
-                      alt="brawlhalla"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Tyre Management API</h3>
-
-                  <p class="project-category">Web Developments</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a
-                  href="https://github.com/kipxil/raspistream.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <figure class="project-img">
-                    <img
-                      src="./assets/images/api.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Hydro Sense API</h3>
-
-                  <p class="project-category">Mobile Apps Development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a
-                  href="https://github.com/kipxil/laravel-be-pos.git"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <figure class="project-img">
-                    <img
-                      src="./assets/images/api.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Point of Sales API</h3>
-
-                  <p class="project-category">Mobile Apps Development</p>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-      </div>
+      <section class="section contact-section" id="contact">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <span class="mono muted-label">06 / CONTACT</span>
+            <h2>Let's connect around <span>IT &amp; systems.</span></h2>
+            <p>
+              Contact details can be added here when you are ready. The section
+              is prepared for email, LinkedIn, GitHub, CV download, or a direct
+              message flow.
+            </p>
+            <div class="contact-state">
+              <span class="state-dot"></span>
+              <div>
+                <strong>Open to IT opportunities</strong
+                ><small>Infrastructure · IT Specialist · Full-Stack</small>
+              </div>
+            </div>
+          </div>
+          <div class="contact-actions">
+            <a class="contact-action" href="mailto:raflyakbar606@gmail.com"
+              ><span class="action-icon">✉</span>
+              <div>
+                <small>Email</small><strong>raflyakbar606@gmail.com</strong>
+              </div>
+              <span>↗</span></a
+            >
+            <a
+              class="contact-action"
+              href="https://www.linkedin.com/in/raflyap/"
+              target="_blank"
+              ><span class="action-icon">in</span>
+              <div>
+                <small>LinkedIn</small><strong>linkedin.com/raflyap</strong>
+              </div>
+              <span>↗</span></a
+            >
+            <a
+              class="contact-action"
+              href="https://github.com/kipxil"
+              target="_blank"
+              rel="noopener"
+              ><span class="action-icon">GH</span>
+              <div><small>GitHub</small><strong>github.com/kipxil</strong></div>
+              <span>↗</span></a
+            >
+            <a class="contact-action" href="#" onclick="return false;"
+              ><span class="action-icon">CV</span>
+              <div><small>Resume</small><strong>Add CV download</strong></div>
+              <span>↓</span></a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!--
-    - custom js link
-  -->
-    <script src="/script.js"></script>
+    <footer class="site-footer">
+      <p>
+        © <span id="year"></span> Rafly Akbar Prastyo. Built between ops &amp;
+        code.
+      </p>
+      <div>
+        <span>Surabaya, Indonesia</span><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
 
-    <!--
-    - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
